@@ -13,11 +13,21 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
   </properties>
   <distributionManagement>
-    <thirdpartyRepository>
+    <repository>
       <id>thirdparty</id>
       <name>3rd party</name>
       <url>http://10.252.1.149:8081/nexus/content/repositories/thirdparty</url>
-    </thirdpartyRepository>
+    </repository>
+    <snapshotRepository>
+      <id>nexus</id>
+      <name>Nexus Snapshot</name>
+      <url>http://localhost:8081/nexus/content/repositories/snapshots</url>
+    </snapshotRepository>
+    <site>
+      <id>nexus</id>
+      <name>Nexus Sites</name>
+      <url>dav:http://localhost:8081/nexus/content/sites/site/</url>
+    </site>
   </distributionManagement>
   <build>
     <plugins>
